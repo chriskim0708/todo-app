@@ -3,6 +3,7 @@ import TodoTemplate from "./components/TodoTemplate";
 import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
 import TodoItem from "./components/TodoItem";
+import TodoCreate from "./components/TodoCreate";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -21,6 +22,7 @@ function App() {
           <TodoItem text="컴포넌트 스타일링 하기" done={false} />
           <TodoItem text="Context 만들기" done={false} />
           <TodoItem text="기능 구현하기" done={false} />
+          <TodoCreate />
         </TodoList>
       </TodoTemplate>
     </div>
